@@ -36,14 +36,14 @@ To make sync-git-branches available from anywhere, keep a stable copy of the scr
 
 ```bash
 mkdir -p ~/bin
-cp /path/to/safe/location/sync-git-branches.sh ~/bin/sync-git-branches
+cp ./sync-git-branches.sh ~/bin/sync-git-branches
 chmod +x ~/bin/sync-git-branches
 ```
 
 2) Make sure ~/bin is on your PATH
 
 ```bash
-./sync-git-branches.shexport PATH="$HOME/bin:$PATH"
+echo 'export PATH="$HOME/bin:$PATH"' >> ~/.bashrc
 ```
 
 3) Reload your shell
